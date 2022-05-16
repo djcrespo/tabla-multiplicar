@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de multiplicar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/multiplicaciones.js"></script>
+</head>
+<body>
+    <div class="container has-text-centered mt-4">
+        <h1 class="title">Tablas de multiplicar</h1>
+
+        <h2 class="subtitle">Ingresa un número y generará la tabla de multiplos del 1 al 10</h2>
+    </div>
+
+    <div class="container pt-5">
+        <div class="columns">
+            <div class="column is-4 is-offset-4">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="field">
+                            <label class="label">Número</label>
+                            <input type="number" id="numberControl" class="input" placeholder="Ingresa tu número aquí">
+                        </div>
+                        <div class="field has-text-centered">
+                            <button class="button is-success" onclick="generarTabla()">Generar tabla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tabla" class="container pt-5">
+        <div class="columns has-text-centered">
+            <div class="column is-2 is-offset-5">
+                <div id="table" class="card mx-2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
